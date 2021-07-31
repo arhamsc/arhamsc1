@@ -1,0 +1,344 @@
+html,body {
+  height: 100vh;
+  margin:0;
+}
+.landing {
+  height: 100vh;
+  width: 100%;
+  background-image: url('bg1.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  
+}
+a {
+  text-decoration: none;
+}
+.myName {
+  color: white;
+  font-family: 'Raleway';
+  font-size: 40px;
+  font-weight: bolder;
+  padding: 40px 0 0 30px;
+}
+#menulist {
+  padding: 30px 20px 0 0;
+  z-index: 1;
+}
+#menulist li  {
+    display: inline-block;
+    font-size: 30px;
+    padding: 0px 15px 15px 10px;
+}
+#menulist li a {
+  color:white;
+  font-family: 'PT Sans Narrow'
+  
+}
+#check {
+  display: none;
+}
+label #btn {
+  display: none;
+}
+#menulist li a:Hover {
+  border: 2px solid white;
+  border-radius: 10px;
+  padding: 10px;
+  transition: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+.mainText {
+  color:white;
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  z-index: 2;
+}
+.mainText p:first-child {
+  font-size: 40px;
+  margin-bottom: -20%;
+  font-family: 'Merriweather';
+  font-weight: bold;
+}
+.mainText p:nth-child(2) {
+  font-size: 50px;
+  margin-bottom: 0;
+  font-family: 'Chakra Petch';
+  font-weight: bolder;
+}
+.mainText p:nth-child(2) span {
+  font-size: 90px;
+  text-shadow: green 3px 2px 6px;
+}
+.animated-text{
+  font-family: 'Raleway';
+  font-size: 40px;
+  height: 50px;
+  overflow: hidden;
+  font-weight: bold;
+  
+}
+.slider {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  box-sizing: border-box;
+  animation: slider 6s linear infinite;
+}
+
+.slider div{
+  line-height: 60px;
+}
+@keyframes slider {
+  0% {
+    margin-top: -180px;
+  }
+  5% {
+    margin-top: -120px;
+  }
+  33% {
+    margin-top: -120px;
+  }
+  38% {
+    margin-top: -65px;
+  }
+  66% {
+    margin-top: -65px;
+  }
+  71% {
+    margin-top: 0px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
+.scrollBtn {
+  padding: 20px;
+  font-size: 30px;
+  border-radius: 20px;
+  border: 2px solid white;
+  background: none;
+  color:white;
+  margin-top: 7%;
+  margin-left: -3%;
+  font-family: 'Bebas Neue';
+  transition: 0.5s;
+}
+.scrollBtn:Hover {
+  background-color: rgb(204, 255, 255, 0.5);
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+}
+.stickyBg {
+  background: url('./Assests/navbar1.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 116px;
+  z-index:3;
+}
+.inlineColor {
+  color: green;
+}
+.inlineColorSticky{
+  color: red;
+}
+.about,.projects,.expertise,.contactme{
+  padding-top: 116px;
+  height: 100vh;
+}
+.heading h1 {
+  overflow: hidden;
+  text-align: center;
+  font-family: "Chakra Petch";
+  font-weight: bolder;
+  font-size: 50px;
+}
+.heading h1:before, .heading h1:after{
+  background-color: blue;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  vertical-align: middle;
+  width: 10%;
+  border-radius: 10px;
+}
+.heading h1:before{
+  right: 0.5rem;
+  margin-left: -50%;
+}
+.heading h1:after{
+  left: 0.5rem;
+  margin-right: -50%;
+}
+.heading h3 {
+  overflow: hidden;
+  text-align: center;
+  font-family: 'Raleway';
+  font-weight: bolder;
+  margin-top: -2%;
+  font-style: italic;
+}
+.info {
+  display: inline-block;
+  padding: 0 0 0 5px;
+  color: green;
+  font-size: 40px;
+}
+.heading h3:before, .heading h3:after{
+  background-color:green;
+  content: "";
+  display: inline-block;
+  height: 2px;
+  position: relative;
+  vertical-align: middle;
+  width: 5%;
+  border-radius: 10px;
+}
+.heading h3:before{
+  right: 0.5rem;
+  margin-left: -50%;
+}
+.heading h3:after{
+  left: 0.5rem;
+  margin-right: -50%;
+}
+.about {
+  background-color: #edf2fb;
+}
+.aboutMatter {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding-top: 30px;
+}
+.aboutImage img {
+  height: 60%;
+  width: 80%;
+  padding-left: 10%;
+}
+.aboutText {
+  font-family: 'Merriweather';
+  font-size: 22px;
+  text-align: justify;
+  padding-right: 20px;
+  padding-top: 10%;
+}
+.aboutText button {
+  background-color: #48cae4;
+  border: none;
+  border-radius: 10px;
+  font-family: 'Raleway';
+  font-size: 25px;
+  font-weight: bolder;
+  padding: 30px;
+  vertical-align: middle;
+}
+.aboutText div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aboutText button a {
+  color: white;
+  text-shadow: 3px 2px 8px #0096c7;
+}
+.aboutText button:Hover {
+  padding: 40px;
+  transition: 0.5s;
+}
+.aboutText button a:Hover {
+  color: #03045e;
+  transition: 0.5s;
+}
+@media only screen and (max-width: 480px) {
+  label #btn {
+    display: block;
+  }
+  .navBar {
+    z-index: 2;
+  }
+  #menulist {
+    position: fixed;
+    width: 100%;
+    height: calc(100vh-90px);
+    background: rgb(52,73,94, 0.9);
+    left: -108%;
+    top: 80px;
+    text-align: center;
+    padding-top: 20px;
+    transition: all .5s;
+    font-size: 25px;
+    box-shadow: 10px 0 10px black;
+  }
+  #menulist li {
+    display: block;
+    line-height: 50px;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+  .myName {
+    font-size: 30px;
+  }
+  #btn {
+    margin-top: 42px;
+    margin-right: 20px;
+    font-size: 30px;
+  }
+  #menulist li a:Hover {
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 6px;
+    transition: 0.2s;
+    transition-timing-function: ease-in-out;
+  }
+  .mainText {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    z-index: 1;
+  }
+  .mainText p:nth-child(2) span {
+    text-shadow: black 3px 2px 6px;
+  }
+  .about {
+    padding-top: 75px;
+  }
+  .heading h1 {
+    font-size: 35px;
+  }
+  .heading h3{
+    margin-top: -4%;
+  }
+  .aboutMatter{
+    display: flex;
+    flex-direction: column;
+  }
+  .aboutImage img {
+    height: 40%;
+    width: 90%;
+  }
+  .aboutText {
+    font-size: 16px;
+    margin-top: -9%;
+    padding-left: 5px;
+  }
+  .aboutText div button {
+    padding: 20px;
+    font-size: 20px;
+  }
+  .aboutText div button:Hover {
+    padding: 30px;
+  }
+}
