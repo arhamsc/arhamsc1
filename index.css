@@ -313,7 +313,7 @@ label #btn {
 
 .projects .heading {
   position: relative;
-  height: 10%;
+  height: 15%;
   width: 100%;
 }
 
@@ -552,5 +552,8 @@ label #btn {
   }
   .projects{
     height: 175vh;
+  }
+  .projects .heading {
+    height: 10%;
   }
 }
