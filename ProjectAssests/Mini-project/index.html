@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" class = "box">
+  <head>
+    <meta name= "viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="indexcss.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Admin Page</title>
+  </head>
+  <body class = "box">
+      <div class="gridcontainer">
+        <header class = "header">
+          <div class="dashboard">
+            <i class="fas fa-bars bar"></i>Dashboard
+          </div>
+          <div class="searchbar">
+            <form>
+              <input type="text" name="search" placeholder="Search..">
+              <button><i class="fas fa-search"></i></button>
+            </form>
+          </div>
+          <div class="avatar">
+            <span><img src="maleuser.jpg" id = "topimg"></span><span id = "admintext">Admin</span>
+          </div>
+        </header>
+        <aside class="sidenav">
+          <ol id = "WEB">
+            <li><i class="fas fa-desktop"></i> WEB</li>
+          </ol>
+          <ol id = "ListHov">
+            <li><i class="fas fa-tachometer-alt" id = "lefticons"></i> <span>Dashboard</span></li> <br>
+            <li><i class="fas fa-users" id = "lefticons"></i> <span>Customers </span></li> <br>
+            <li><i class="fas fa-tasks" id = "lefticons"></i> <span>Projects</span></li> <br>
+            <li><i class="fas fa-shopping-bag" id = "lefticons"></i> <span>Orders</span></li> <br>
+            <li><i class="fas fa-warehouse" id = "lefticons"></i><span> Inventory </span></li> <br>
+            <li><i class="fas fa-user-circle" id = "lefticons"></i><span> Accounts</span></li> <br>
+            <li><i class="fas fa-clipboard-list" id = "lefticons"></i> Tasks</li>
+          </ol>
+        </aside>
+        <main class = "mainbody">
+          <div class="mainoverviewcards">
+            <div class="overviewcard">
+              <div class="overviewcardtext"><p id = "cardnumber">345</p> <br> <p id = "cardtext">Customers</p></div>
+              <div class="overviewcardicon"><i class="fas fa-users"></i></div>
+            </div>
+            <div class="overviewcard">
+              <div class="overviewcardtext"><p id = "cardnumber">456</p>  <p id = "cardtext">Projects</p></div>
+              <div class="overviewcardicon"><i class="fas fa-clipboard-list"></i></div>
+            </div>
+            <div class="overviewcard">
+              <div class="overviewcardtext"><p id = "cardnumber">9,21,02,045</p> <br> <br><br> <p id = "cardtext">Income</p></div>
+              <div class="overviewcardicon"><i class="fas fa-rupee-sign"></i></div>
+            </div>
+          </div>
+          <div class="main-card">
+            <div class="card">
+              <div class="cardheader">
+                <p id = "headertext">Recent Projects</p>
+                <button type="button" name="button" id = "headerbutton"><span id = "headerbuttontext">See All</span></button>
+              </div>
+              <div class="table1">
+                <table>
+                    <tr id = "tableheader">
+                    <td>Project Title</td>
+                    <td>Departments</td>
+                    <td>Status</td>
+                  </tr>
+                  <tr>
+                    <td>Web Development</td>
+                    <td>Dev Team</td>
+                    <td><i class="fas fa-circle" id = "review"></i> Review</td>
+                  </tr>
+                  <tr>
+                    <td>UI Development</td>
+                    <td>UI Team</td>
+                    <td><i class="fas fa-circle" id = "completed"></i> Completed</td>
+                  </tr>
+                  <tr>
+                    <td>Swift App Development</td>
+                    <td>iOS App Team</td>
+                    <td><i class="fas fa-circle" id = "in-progress"></i> In Progress</td>
+                  </tr>
+                  <tr>
+                    <td>Cloud Hosting Service</td>
+                    <td>Cloud Computing Team</td>
+                    <td><i class="fas fa-circle" id = "completed"></i> Completed</td>
+                  </tr>
+                  <tr>
+                    <td>Android App</td>
+                    <td>Java Team</td>
+                    <td><i class="fas fa-circle" id = "in-progress"></i> In Progress</td>
+                  </tr>
+                  <tr>
+                    <td>MacOS Cleanup Software</td>
+                    <td>MacOS Team 1</td>
+                    <td><i class="fas fa-circle" id = "review"></i> Review</td>
+                  </tr>
+                  <tr>
+                    <td>Chess Game</td>
+                    <td>MAcOS Team 2</td>
+                    <td><i class="fas fa-circle" id = "completed"></i> Completed</td>
+                  </tr>
+                  <tr>
+                    <td>Commercial Sales Website</td>
+                    <td>Django Team</td>
+                    <td><i class="fas fa-circle" id = "in-progress"></i> In Progress</td>
+                  </tr>
+                  <tr>
+                    <td>Apple Watch App</td>
+                    <td>Watch OS Team</td>
+                    <td><i class="fas fa-circle" id = "review"></i> Review</td>
+                  </tr>
+                </table>
+
+              </div>
+            </div>
+            <div class="card" id = "card2"><div class="cardheader">
+              <p id = "headertext">Incharge</p>
+              <button type="button" name="button" id = "headerbutton"><span id = "headerbuttontext">See All</span></button>
+            </div>
+            <div class="table2">
+              <table id = "tablescroll">
+                  <tr id = "tableheader">
+                  <td>Picture</td>
+                  <td>Name</td>
+                  <td>Contact</td>
+                </tr>
+                <tr>
+                  <td><img src = "maleuser.jpg" id = "inchargepic"></td>
+                  <td>Diluc</td>
+                  <td> <a href="tel: 9856723"><i class="fas fa-phone"></i></a>
+                       <a href="mailto: sample@gmail.com"><i class="fas fa-envelope"></i></a>
+                       <a href="https://goo.gl/maps/XFRYuiXy4DLnbfCUA" target = "_blank"><i class="fas fa-map-marker-alt"></i></a>
+                   </td>
+                </tr>
+                <tr>
+                  <td><img src = "maleuser.jpg" id = "inchargepic"></td>
+                  <td>Kaeya</td>
+                  <td><a href="tel: 9856723"><i class="fas fa-phone"></i></a>
+                       <a href="mailto: sample@gmail.com"><i class="fas fa-envelope"></i></a>
+                       <a href="https://goo.gl/maps/XFRYuiXy4DLnbfCUA" target = "_blank"><i class="fas fa-map-marker-alt"></i></a></td>
+                </tr>
+                <tr>
+                  <td><img src = "maleuser.jpg" id = "inchargepic"></td>
+                  <td>Xinqu</td>
+                  <td><a href="tel: 9856723"><i class="fas fa-phone"></i></a>
+                       <a href="mailto: sample@gmail.com"><i class="fas fa-envelope"></i></a>
+                       <a href="https://goo.gl/maps/XFRYuiXy4DLnbfCUA" target = "_blank"><i class="fas fa-map-marker-alt"></i></a></td>
+                </tr>
+                <tr>
+                  <td><img src = "femaleuser.png" id = "femaleinchargepic"></td>
+                  <td>Ganyu</td>
+                  <td><a href="tel: 9856723"><i class="fas fa-phone"></i></a>
+                       <a href="mailto: sample@gmail.com"><i class="fas fa-envelope"></i></a>
+                       <a href="https://goo.gl/maps/XFRYuiXy4DLnbfCUA" target = "_blank"><i class="fas fa-map-marker-alt"></i></a></td>
+                </tr>
+                <tr>
+                  <td><img src = "femaleuser.png" id = "femaleinchargepic"></td>
+                  <td>Ninguang</td>
+                  <td><a href="tel: 9856723"><i class="fas fa-phone"></i></a>
+                       <a href="mailto: sample@gmail.com"><i class="fas fa-envelope"></i></a>
+                       <a href="https://goo.gl/maps/XFRYuiXy4DLnbfCUA" target = "_blank"><i class="fas fa-map-marker-alt"></i></a></td>
+                </tr>
+                <tr>
+                  <td><img src = "maleuser.jpg" id = "inchargepic"></td>
+                  <td>Zongli</td>
+                  <td><a href="tel: 9856723"><i class="fas fa-phone"></i></a>
+                       <a href="mailto: sample@gmail.com"><i class="fas fa-envelope"></i></a>
+                       <a href="https://goo.gl/maps/XFRYuiXy4DLnbfCUA" target = "_blank"><i class="fas fa-map-marker-alt"></i></a></td>
+                </tr>
+                <tr>
+                  <td><img src = "femaleuser.png" id = "femaleinchargepic"></td>
+                  <td>Lisa</td>
+                  <td><a href="tel: 9856723"><i class="fas fa-phone"></i></a>
+                       <a href="mailto: sample@gmail.com"><i class="fas fa-envelope"></i></a>
+                       <a href="https://goo.gl/maps/XFRYuiXy4DLnbfCUA" target = "_blank"><i class="fas fa-map-marker-alt"></i></a></td>
+                </tr>
+                <tr>
+                  <td><img src = "femaleuser.png" id = "femaleinchargepic"></td>
+                  <td>Jean</td>
+                  <td><a href="tel: 9856723"><i class="fas fa-phone"></i></a>
+                       <a href="mailto: sample@gmail.com"><i class="fas fa-envelope"></i></a>
+                       <a href="https://goo.gl/maps/XFRYuiXy4DLnbfCUA" target = "_blank"><i class="fas fa-map-marker-alt"></i></a></td>
+                </tr>
+                <tr>
+                  <td><img src = "femaleuser.png" id = "femaleinchargepic"></td>
+                  <td>Klee</td>
+                  <td><a href="tel: 9856723"><i class="fas fa-phone"></i></a>
+                       <a href="mailto: sample@gmail.com"><i class="fas fa-envelope"></i></a>
+                       <a href="https://goo.gl/maps/XFRYuiXy4DLnbfCUA" target = "_blank"><i class="fas fa-map-marker-alt"></i></a></td>
+                </tr>
+              </table>
+
+            </div>
+
+          </div>
+        </main>
+      </div>
+
+
+  </body>
+</html>
