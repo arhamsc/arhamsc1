@@ -80,6 +80,7 @@ label #btn {
 
 .mainText p:nth-child(2) {
   font-size: 50px;
+  padding-top: 40px;
   margin-bottom: 0;
   font-family: 'Chakra Petch';
   font-weight: bolder;
@@ -219,7 +220,7 @@ label #btn {
   text-align: center;
   font-family: 'Raleway';
   font-weight: bolder;
-  margin-top: -2%;
+  margin-top: 0;
   font-style: italic;
 }
 
@@ -308,7 +309,7 @@ label #btn {
 }
 
 .projects {
-  margin-top: -9%;
+  margin-top: -5%;
 }
 
 .projects .heading {
@@ -417,6 +418,136 @@ label #btn {
 .centerText button a {
   color: white;
 }
+.expertise {
+  margin-top: -10%;
+}
+.circular{
+  height:100px;
+  width: 100px;
+  position: relative;
+  transform:scale(2);
+}
+.circular .inner{
+  position: absolute;
+  z-index: 6;
+  top: 50%;
+  left: 50%;
+  height: 80px;
+  width: 80px;
+  margin: -40px 0 0 -40px;
+  background: #dde6f0;
+  border-radius: 100%;
+ 
+}
+.circular .number{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  z-index:10;
+  font-size:18px;
+  font-weight:500;
+  color:#4158d0;
+}
+.circular .bar{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  -webkit-border-radius: 100%;
+  clip: rect(0px, 100px, 100px, 50px);
+}
+.circle .bar .progress{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-border-radius: 100%;
+  clip: rect(0px, 50px, 100px, 0px);
+  background: #4158d0;
+}
+.circle .left .progress{
+  z-index:1;
+  animation: left 2s linear both;
+}
+@keyframes left{
+  100%{
+    transform: rotate(180deg);
+  }
+}
+.circle .right {
+  transform: rotate(180deg);
+  z-index:3;
+ 
+}
+.circle .right .progress{
+  animation: right 1s linear both;
+  animation-delay:2s;
+}
+@keyframes right{
+  100%{
+    transform: rotate(150deg);
+  }
+}
+.circle .right .progress2{
+  animation: right1 1s linear both;
+  animation-delay:2s;
+}
+@keyframes right1 {
+  100%{
+    transform: rotate(0deg);
+  }
+}
+.circle .right .progress1{
+  animation: right0 1s linear both;
+  animation-delay:2s;
+}
+@keyframes right0{
+  100%{
+    transform: rotate(130deg);
+  }
+}
+.circle .right .progress3{
+  animation: right2 1s linear both;
+  animation-delay:2s;
+}
+@keyframes right2 {
+  100%{
+    transform: rotate(35deg);
+  }
+}
+.circle .right .progress4{
+  animation: right3 1s linear both;
+  animation-delay:2s;
+}
+@keyframes right3{
+  100%{
+    transform: rotate(70deg);
+  }
+}
+
+.content {
+  padding-left: 100px;
+  padding-top: 50px;
+  width: 95%;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 80px;
+}
+.content1 {
+  display: flex;
+  justify-content: space-around;
+}
+.circle1 {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+}
+.circle1 p {
+  font-size: 30px;
+  padding-bottom: 30px;
+  font-family: 'PT Sans Narrow';
+}
+
 
 @media only screen and (max-width: 480px) {
   label #btn {
@@ -555,5 +686,15 @@ label #btn {
   }
   .projects .heading {
     height: 50px;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+  }
+  .circle1 {
+    padding: 40px 0 40px 0;
+  }
+  .expertise {
+    margin-top: -300px;
   }
 }

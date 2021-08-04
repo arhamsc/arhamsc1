@@ -52,3 +52,67 @@ else {
   return 0;
 }
 }
+
+const numb = document.querySelector(".number");
+let counter = 0;
+setInterval(() => {
+  if(counter == 90 ){
+    clearInterval();
+  }else{
+    counter+=1;
+    numb.textContent = counter + "%";
+  }
+}, 33);
+
+const numb1 = document.querySelector(".number1");
+let counter1 = 0;
+setInterval(() => {
+  if(counter1 == 80 ){
+    clearInterval();
+  }else{
+    counter1+=1;
+    numb1.textContent = counter1 + "%";
+  }
+}, 36);
+
+const numb2 = document.querySelector(".number2");
+let counter2 = 0;
+setInterval(() => {
+  if(counter2 == 50 ){
+    clearInterval();
+  }else{
+    counter2+=1;
+    numb2.textContent = counter2 + "%";
+  }
+}, 36);
+
+const numb3 = document.querySelector(".number3");
+let counter3 = 0;
+setInterval(() => {
+  if(counter3 == 60 ){
+    clearInterval();
+  }else{
+    counter3+=1;
+    numb3.textContent = counter3 + "%";
+  }
+}, 48);
+const numb5 = document.querySelector(".number5");
+let counter5 = 0;
+setInterval(() => {
+  if(counter5 == 50 ){
+    clearInterval();
+  }else{
+    counter5+=1;
+    numb5.textContent = counter5 + "%";
+  }
+}, 36);
+const numb6 = document.querySelector(".number6");
+let counter6 = 0;
+setInterval(() => {
+  if(counter6 == 50 ){
+    clearInterval();
+  }else{
+    counter6+=1;
+    numb6.textContent = counter6 + "%";
+  }
+}, 36);
