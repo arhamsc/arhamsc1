@@ -778,7 +778,7 @@ input, textarea {
   .content {
     display: flex;
     flex-direction: column;
-    padding-left: -20px;
+    padding-left: -30px;
   }
   .circle1 {
     padding: 40px 0 40px 0;
