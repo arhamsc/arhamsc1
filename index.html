@@ -33,7 +33,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#expertise">Expertise</a></li>
-            <li><a href="#">Contact Me</a></li>
+            <li><a href="#contactme">Contact Me</a></li>
           </ul>
         </div>
       </div>
@@ -47,7 +47,9 @@
             <div>An Otaku</div>
           </div>
         </div>
-        <button type="button" name="button" class="scrollBtn">Scroll Down to Know More</button>
+        <button type="button" name="button" class="scrollBtn" onclick="document.querySelector('.about').scrollIntoView({ 
+  behavior: 'smooth' 
+});">Scroll Down to Know More</button>
       </div>
     </div>
     <div class="about" id="about">
@@ -116,7 +118,7 @@
         </div>
       </div>
     </div>
-    <div class="expertise" id = "expertise">
+    <div class="expertise" id="expertise">
       <div class="heading">
         <h1>Expertise</h1>
         <h3>My Skills</h3>
@@ -230,7 +232,62 @@
           </div>
         </div>
       </div>
+    </div>
+    <div class="contactme" id = "contactme">
+      <div class="heading">
+        <h1>Contact Me</h1>
+        <h3>Get in touch</h3>
+      </div>
+      <div class="contactMatter">
+        <div class="contactleft">
+          <div class="info">
+            <div class="infoIcon">
+              <span class="material-icons">person</span>
+            </div>
+            <div class="infoText">
+              <p>ARHAM S C</p>
+            </div>
+          </div>
+          <div class="info">
+            <div class="infoIcon">
+              <span class="material-icons">phone</span>
+            </div>
+            <div class="infoText">
+              <p><a href="tel: +919880151166">+91 9880151166</a></p>
+            </div>
+          </div>
+          <div class="info">
+            <div class="infoIcon">
+              <span class="material-icons">send</span>
+            </div>
+            <div class="infoText">
+              <p><a href="mailto: shaik.arham@gmail.com" style = "font-style: italic">shaik.arham@gmail.com</a></p>
+            </div>
+          </div>
 
+        </div>
+        <div class="contactright">
+          <div class="formhead">
+            <p>Please feel free to drop a Query:</p>
+          </div>
+          <form name="ResponseForm" method="post" autocomplete="off">
+            <label for="Name">Name:</label> <br>
+            <input type="text" name="Name" placeholder="Enter Name"> <br><br>
+            <label for="Email">Email:</label><br>
+            <input type="email" name="Email" placeholder="Enter Email">
+            <br><br>
+            <label for="Subject">Subject:</label> <br>
+            <input type="text" name="Subject" placeholder="Enter Subject">
+            <br><br>
+            <label for="Query">Query:</label> <br>
+            <textarea name="Query" rows="8" cols="45" placeholder="Type in your query or message"></textarea> <br><br>
+            <div class="buttons">
+              <button type="submit" name="submit" value="Send Message" id="btnlast">Submit</button>
+              <button type="reset" name="reset" id="btnlast">Reset</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
     <script src="index.js"></script>
   </body>

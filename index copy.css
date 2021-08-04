@@ -1,11 +1,8 @@
 html, body {
   height: 100vh;
   margin: 0;
-  
 }
-html{
-  scroll-behavior: smooth;
-}
+
 .landing {
   height: 100vh;
   width: 100%;
@@ -83,7 +80,6 @@ label #btn {
 
 .mainText p:nth-child(2) {
   font-size: 50px;
-  padding-top: 40px;
   margin-bottom: 0;
   font-family: 'Chakra Petch';
   font-weight: bolder;
@@ -223,7 +219,7 @@ label #btn {
   text-align: center;
   font-family: 'Raleway';
   font-weight: bolder;
-  margin-top: 0;
+  margin-top: -2%;
   font-style: italic;
 }
 
@@ -266,7 +262,7 @@ label #btn {
 }
 
 .aboutImage img {
-  height: 80%;
+  height: 60%;
   width: 80%;
   padding-left: 10%;
 }
@@ -312,7 +308,7 @@ label #btn {
 }
 
 .projects {
-  margin-top: -5%;
+  margin-top: -9%;
 }
 
 .projects .heading {
@@ -421,222 +417,7 @@ label #btn {
 .centerText button a {
   color: white;
 }
-.expertise {
-  margin-top: -10%;
-}
-.circular{
-  height:100px;
-  width: 100px;
-  position: relative;
-  transform:scale(2);
-}
-.circular .inner{
-  position: absolute;
-  z-index: 6;
-  top: 50%;
-  left: 50%;
-  height: 80px;
-  width: 80px;
-  margin: -40px 0 0 -40px;
-  background: #dde6f0;
-  border-radius: 100%;
- 
-}
-.circular .number{
-  position: absolute;
-  top:50%;
-  left:50%;
-  transform: translate(-50%, -50%);
-  z-index:10;
-  font-size:18px;
-  font-weight:500;
-  color:#4158d0;
-}
-.circular .bar{
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background: #fff;
-  -webkit-border-radius: 100%;
-  clip: rect(0px, 100px, 100px, 50px);
-}
-.circle .bar .progress{
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  -webkit-border-radius: 100%;
-  clip: rect(0px, 50px, 100px, 0px);
-  background: #4158d0;
-}
-.circle .left .progress{
-  z-index:1;
-  animation: left 2s linear both;
-}
-@keyframes left{
-  100%{
-    transform: rotate(180deg);
-  }
-}
-.circle .right {
-  transform: rotate(180deg);
-  z-index:3;
- 
-}
-.circle .right .progress{
-  animation: right 1s linear both;
-  animation-delay:2s;
-}
-@keyframes right{
-  100%{
-    transform: rotate(150deg);
-  }
-}
-.circle .right .progress2{
-  animation: right1 1s linear both;
-  animation-delay:2s;
-}
-@keyframes right1 {
-  100%{
-    transform: rotate(0deg);
-  }
-}
-.circle .right .progress1{
-  animation: right0 1s linear both;
-  animation-delay:2s;
-}
-@keyframes right0{
-  100%{
-    transform: rotate(130deg);
-  }
-}
-.circle .right .progress3{
-  animation: right2 1s linear both;
-  animation-delay:2s;
-}
-@keyframes right2 {
-  100%{
-    transform: rotate(35deg);
-  }
-}
-.circle .right .progress4{
-  animation: right3 1s linear both;
-  animation-delay:2s;
-}
-@keyframes right3{
-  100%{
-    transform: rotate(70deg);
-  }
-}
 
-.content {
-  padding-left: 100px;
-  padding-top: 50px;
-  width: 95%;
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 80px;
-}
-.content1 {
-  display: flex;
-  justify-content: space-around;
-}
-.circle1 {
-  display: flex;
-  flex-direction: column;
-  align-items:center;
-}
-.circle1 p {
-  font-size: 30px;
-  padding-bottom: 30px;
-  font-family: 'PT Sans Narrow';
-}
-.contactme {
-  background-image: url('./Assests/contact.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  padding-bottom: 40px;
-}
-.contactme .heading {
-  color:white;
-}
-.contactMatter {
-  padding-top: 30px;
-  display:flex;
-  flex-direction: row;
-  justify-content: space-around;
-  
-}
-.contactleft {
-  background-color: white;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items:center;
-  width: 30%;
-}
-.info {
-  display: flex;
-  flex-direction: row;
-}
-
-.infoIcon span {
-  font-size: 50px;
-  padding-right: 20px;
-  color: #00bfff;
-}
-.infoText {
-  font-size: 30px;
-  color: black;
-  font-family: 'Raleway';
-  font-weight: bolder;
-}
-.infoText a {
-  color: black;
-}
-.contactright {
-  background-color: white;
-  border-radius: 10px;
-  width: 30%;
-  padding: 20px 25px;
-}
-.formhead {
-  font-size: 30px;
-  font-family: 'PT Sans Narrow';
-  color: #0086b3;
-  font-style: italic;
-  text-decoration: underline;
-}
-form label {
-  font-size: 20px;
-  font-family: 'Merriweather';
-  color: #00bfff;
-}
-input, textarea {
-  background: none;
-  border: 1px solid #00bfff;
-  border-radius: 5px;
-  padding: 5px;
-  width: 100%;
-}
-.buttons {
-  display: flex;
-  flex-direction: row;
-  justify-content:space-around;
-}
-.buttons button {
-  font-size: 20px;
-  padding: 10px 15px;
-  border-radius: 5px;
-  border: none;
-  background-color: #00bfff;
-  color: white;
-}
-.buttons button:hover {
-  background-color: #004d66;
-  transition: 0.5s;  
-}
 @media only screen and (max-width: 480px) {
   label #btn {
     display: block;
@@ -773,36 +554,6 @@ input, textarea {
     height: 175vh;
   }
   .projects .heading {
-    height: 90px;
-  }
-  .content {
-    display: flex;
-    flex-direction: column;
-    padding-left: -20px;
-  }
-  .circle1 {
-    padding: 40px 0 40px 0;
-  }
-  .expertise {
-    margin-top: -350px;
-  }
-  .contactMatter {
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-
-  }
-  .contactleft, .contactright {
-    width: 90%;
-  }
-  
-  .contactright{
-    margin-top: 40px;
-  }
-  .infoIcon {
-    font-size: 20px;
-  }
-  .infoText {
-    font-size: 20px;
+    height: 50px;
   }
 }

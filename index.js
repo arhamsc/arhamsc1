@@ -116,3 +116,13 @@ setInterval(() => {
     numb6.textContent = counter6 + "%";
   }
 }, 36);
+
+const scriptURL = 'https://script.google.com/macros/s/AKfycbxOm8Jz4stLW5y4dYaQ_L_0LfY2zbNBYEAZktsaKX04auiXS3pgo3aBhOrZzZmpemQ/exec'
+const form = document.forms['ResponseForm']
+
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+  .then(response => alert("Thanks for Contacting me..! I Will Contact You Soon..."))
+  .catch(error => console.error('Error!', error.message))
+})
